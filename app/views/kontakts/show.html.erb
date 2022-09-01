@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @kontakt %>
+
+<div>
+  <%= link_to "Redigera kontaktuppgifter", edit_kontakt_path(@kontakt) %> |
+  <%= link_to "Gå till kontaktlistan", kontakts_path %>
+
+  <%= button_to "Ta bort denna kontakt", @kontakt, method: :delete %>
+</div>

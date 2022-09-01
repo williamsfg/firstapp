@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+<h1>Kontakta Oss</h1>
+<div id="kontakts">
+  <table class='table'>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Förnamn</th>
+        <th scope="col">Efternamn</th>
+        <th scope="col">Title</th>
+        <th scope="col">Mobilnummer</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+  </table>
+  <% @kontakts.each do |kontakt| %>
+    <%= render kontakt %>
+
+  <% end %>
+</div>
+<%= link_to "Lägg till kontakt", new_kontakt_path %>

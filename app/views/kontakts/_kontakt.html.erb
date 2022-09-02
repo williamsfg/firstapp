@@ -1,15 +1,16 @@
 <div id="<%= dom_id kontakt %>">
-  <table class="table" table-striped>
-    <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td><%= kontakt.förnamn %></td>
-        <td><%= kontakt.efternamn %></td>
-        <td> <%= kontakt.title %></td>
-        <td> <%= kontakt.mobilnummer %></td>
-        <td> <%= kontakt.email %></td>
-        <td> <%= link_to "Visa", kontakt %> </td>
-      </tr>
-    </tbody>
-  </table>
+  <tbody>
+    <tr>
+      <th scope="row"><%= kontakt.id %></th>
+      <td><%= kontakt.förnamn %></td>
+      <td><%= kontakt.efternamn %></td>
+      <td> <%= kontakt.title %></td>
+      <td> <%= kontakt.mobilnummer %></td>
+      <td> <%= kontakt.email %></td>
+      <% unless params["id"].present? %>
+              <td> <%= link_to "Visa", kontakt %> </td>
+      <% end %>
+
+    </tr>
+  </tbody>
 </div>

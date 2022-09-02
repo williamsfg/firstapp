@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 <h1>Kontakta Oss</h1>
 <div id="kontakts">
-  <table class='table'>
+  <table class='table table-dark table-hover'>
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -12,10 +12,9 @@
         <th scope="col">Email</th>
       </tr>
     </thead>
+    <% @kontakts.each do |kontakt| %>
+      <%= render kontakt %>
+    <% end %>
   </table>
-  <% @kontakts.each do |kontakt| %>
-    <%= render kontakt %>
-
-  <% end %>
 </div>
-<%= link_to "Lägg till kontakt", new_kontakt_path %>
+<%= link_to "Lägg till kontakt", new_kontakt_path, class:"btn btn secondary btn-dark" %>

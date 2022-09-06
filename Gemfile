@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem 'devise'
 
+gem "ImageResize", "~> 0.0.5" 
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

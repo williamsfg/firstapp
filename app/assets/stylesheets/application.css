@@ -1,68 +1,144 @@
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  td, th {
-    border: 1px solid black;
-    text-align: left;
-    padding: 8px;
-  }
-  .info {
-    border-color: #2196F3;
-    color: dodgerblue
-  }
- 
-.info:hover {
-  background: #2196F3;
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+ }
+
+ td,th {
+   border: 1px solid black;
+   text-align: left;
+   padding: 8px;
+ }
+ .container {
+  padding: 2px 16px;
+}
+
+ .info {
+   border-color: #2196F3;
+   color: dodgerblue
+ }
+
+ .info:hover {
+   background: #2196F3;
+   color: white;
+ }
+
+ .masthead {
+   position: relative;
+   width: 100%;
+   height: auto;
+   min-height: 35rem;
+   padding: 15rem 0;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("Bakgrund Arqitrade logga.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+ }
+
+ .masthead2 {
+   position: relative;
+   width: 100%;
+   height: auto;
+   min-height: 35rem;
+   padding: 15rem 0;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("Trivselhus3.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+ }
+
+ .masthead3 {
+   position: relative;
+   width: 100%;
+   height: auto;
+   min-height: 35rem;
+   padding: 15rem 0;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("ateam.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+ }
+
+ .about-section {
+   padding-top: 10rem;
+   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+ }
+
+ .card {
+  padding-top: 20px;
+   width: 18rem;
+   margin: 30px;
+   
+
+ }
+
+ .card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ .footer {
+   margin-top: 100px;
+   
+ }
+
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 50%;
+
+ }
+
+ .fa:hover {
+   opacity: 0.7;
+ }
+ .fa-instagram {
   color: white;
 }
-.masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("Bakgrund Arqitrade logga.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+.fa-linkedin {
+  color: white;
 }
-.masthead2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("Trivselhus3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+.login-block {
+  width: 320px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.403);
+  border-radius: 5px;
+  border: 5px solid #000;
+  
+  margin: 0 auto;
 }
-.masthead3 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("ateam.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+
+.login-block h1 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
-.about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-}
-.card{
-width: 18rem;
-}
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.footer{
-  margin-top: 100px;  
-}
+

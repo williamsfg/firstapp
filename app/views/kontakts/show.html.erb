@@ -3,26 +3,20 @@
     <h1 class="text-uppercase text-white">Detaljerad Information</h1>
   </div>
 </header>
-<p style="color: green"><%= notice %></p>
-
-<section class="about-section"></section>
 <section class='text-center bg-dark'>
   <div class="container justify: content-center bg-dark text-white">
     <h1 class="display-4">
       <%= @kontakt.förnamn %> <%= @kontakt.efternamn %>
     </h1>
     <p class="lead"><%= @kontakt.title %></p>
-   
-
     <hr class='my-4'>
-     <p>Mobilnummer: <%= @kontakt.mobilnummer %></p>
+    <p>Mobilnummer: <%= @kontakt.mobilnummer %></p>
     <p>Email: <%= @kontakt.email %></p>
   </div>
-</section>
-
-<%= link_to "Redigera kontaktuppgifter", edit_kontakt_path(@kontakt), class:"btn btn secondary btn-dark"%>
-<%= link_to "Gå till kontaktlistan", kontakts_path, class:"btn btn secondary btn-dark"%>
-<hr>
-<%= button_to "Ta bort denna kontakt", @kontakt, method: :delete,class:'btn btn-black' %>
+  <%= link_to "Redigera kontaktuppgifter", edit_kontakt_path(@kontakt), class:"btn btn-outline-primary"%>
+  <%= link_to "Gå till kontaktlistan", kontakts_path, class:"btn btn-outline-primary"%>
+  <hr>
+  <%= button_to "Ta bort denna kontakt", @kontakt, method: :delete,class:'btn btn-danger' %>
+  <br>
 </div>
 <section class="about-section"></section>

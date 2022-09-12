@@ -2,7 +2,6 @@
   <% if kontakt.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(kontakt.errors.count, "error") %> prohibited this kontakt from being saved:</h2>
-
       <ul>
         <% kontakt.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,34 +9,32 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :förnamn, style: "display: block" %>
-    <%= form.text_field :förnamn %>
+  <div class="field form-group">
+    <%= form.label :förnamn%>
+    <%= form.text_field :förnamn, class: "form-control", placeholder: "Ex. Johan"%>
   </div>
-
-  <div>
-    <%= form.label :efternamn, style: "display: block" %>
-    <%= form.text_field :efternamn %>
+  <div class="field form-group">
+    <%= form.label :efternamn %>
+    <%= form.text_field :efternamn, class: "form-control", placeholder: "Ex. Svensson" %>
   </div>
-
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+  <div class="field form-group">
+    <%= form.label :title%>
+    <%= form.text_field :title, class: "form-control", placeholder: "EXempel : HR Chef"%>
   </div>
-
-  <div>
-    <%= form.label :mobilnummer, style: "display: block" %>
-    <%= form.text_field :mobilnummer %>
+  <div class="field form-group">
+    <%= form.label :mobilnummer%>
+    <%= form.text_field :mobilnummer, class: "form-control", placeholder: "Ex: 0700338866"%>
   </div>
-
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+  <div class="field form-group">
+    <%= form.label :email%>
+    <%= form.text_field :email, class: "form-control", placeholder: "exempel@email.com" %>
   </div>
-
+  <div class="field form-group">
+    <%= form.number_field :user_id,
+    id: :kontakt_user_id, class: "form-control", value: current_user.id, type: :hidden%>
+  </div>
   <div>
   </br>
-    <%= form.submit class: "btn btn-dark btn-secondary btn-hover"%>
-  </div>
+  <%= form.submit class: "btn btn-dark btn-secondary btn-hover"%>
+</div>
 <% end %>

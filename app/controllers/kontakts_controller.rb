@@ -63,8 +63,8 @@ class KontaktsController < ApplicationController
       @kontakt = Kontakt.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Only allow a list of trusted parameters through. FORM FIELD = params
     def kontakt_params
-      params.require(:kontakt).permit(:förnamn, :efternamn, :title, :mobilnummer, :email)
+      params.require(:kontakt).permit(:förnamn, :efternamn, :title, :mobilnummer, :email, :user_id)
     end
 end
